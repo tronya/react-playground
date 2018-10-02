@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TopStoriesBlock from "../../components/TopStoriesBlock/TopStoriesBlock";
+import TopStoriesBlock from "../../components/sections/TopStoriesBlock/TopStoriesBlock";
 
 class TopStories extends Component {
 

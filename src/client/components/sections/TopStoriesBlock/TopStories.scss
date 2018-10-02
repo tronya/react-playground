@@ -1,0 +1,13 @@
+.top-stories {
+  &__item {
+    background-size: cover;
+    height: 100vh;
+    max-width: 100vw;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+  &__content {
+    padding: 2rem;
+    text-align: left;
+  }
+}
