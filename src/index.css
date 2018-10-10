@@ -4,5 +4,5 @@ button, .btn {
 button__active, .btn__active {
   background-color: green; }
 
-body {
-  display: none; }
+.bg__grey {
+  background: grey; }

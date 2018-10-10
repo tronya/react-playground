@@ -1,7 +1,7 @@
-import { combineReducers } from "redux";
-import TopStoriesReducer from "./topStorise";
+import {combineReducers} from "redux";
+import apiSearch from "./apiSearchReducer";
 
 const allReducers = combineReducers({
-  topStories: TopStoriesReducer,
+    apiSearch
 });
 export default allReducers

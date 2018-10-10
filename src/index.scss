@@ -1,7 +1,11 @@
 button, .btn {
-    padding: .3rem; }
-button__active, .btn__active {
-    background-color: green; }
+  padding: .3rem;
+}
 
-body {
-    display: none; }
+button__active, .btn__active {
+  background-color: green;
+}
+
+.bg__grey {
+  background: grey;
+}

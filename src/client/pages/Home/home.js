@@ -1,16 +1,13 @@
 import React, {Component} from 'react';
-import {instagramAUTH} from "../../utils/api";
+import SearchField from "../../components/sections/SearchField/SearchField";
+import SearchResults from "../../components/sections/SerachResults/searchResults";
 
 class Home extends Component {
-    componentDidMount() {
-        instagramAUTH()
-            .then(r => window.location.href = r.url)
-    }
-
     render() {
         return (
             <div>
-
+                <SearchField/>
+                <SearchResults/>
             </div>
         );
     }
