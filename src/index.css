@@ -1,8 +1,45 @@
-button, .btn {
-  padding: .3rem; }
+body {
+  background: #131A20;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .8px;
+  line-height: 1.4; }
 
-button__active, .btn__active {
-  background-color: green; }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100; }
 
-.bg__grey {
-  background: grey; }
+h2 {
+  font-weight: 900;
+  text-shadow: 2px 5px 5px black; }
+
+p {
+  font-weight: 400; }
+  p span {
+    font-weight: 100; }
+  p b, p span, p i, p pre {
+    color: #2AE4FC; }
+
+a {
+  color: #2AE4FC;
+  text-decoration: none; }
+
+.movie-item {
+  background: #131A20; }
+  .movie-item__image {
+    width: 100%; }
+
+.movies__list {
+  padding: 2rem 0; }
+
+.genres {
+  display: flex; }
+  .genres__item {
+    padding: .3rem .7rem;
+    background: #eee;
+    display: inline-block;
+    border-radius: 10rem;
+    box-sizing: border-box;
+    margin-right: .5rem;
+    color: #131A20; }

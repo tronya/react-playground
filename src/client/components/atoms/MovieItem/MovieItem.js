@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-import './MovieItem.css'
+import GenresCreator from "../GenresCreator/GenresCreator";
+import MovieInformation from "../MovieInformation/MovieInformation";
+import {Link} from "react-router-dom";
 
 class MovieItem extends Component {
     render() {
@@ -12,7 +14,7 @@ class MovieItem extends Component {
             language,
             name,
             network,
-            oficialSite,
+            officialSite,
             premiered,
             rating,
             shedule,
@@ -25,12 +27,34 @@ class MovieItem extends Component {
             weight
         } = show;
         return (
-            <div key={id} className="movie_item">
-                <h4>{name}</h4>
-                <h6 dangerouslySetInnerHTML={{__html: summary}}/>
-                {image && (
-                    <img src={image.original || image.medium} alt={name}/>
-                )}
+            <div key={id} className="movie-item">
+                <div className="row">
+                    <div className="col-xs-12 col-md-4">
+                        {image && (
+                            <img className="movie-item__image" src={image.original || image.medium} alt={name}/>
+                        )}
+                    </div>
+                    <div className="col-xs-12 col-sm-8 start-md">
+                        <div className="movie-item__content">
+                            <h2>{name}</h2>
+                            <p dangerouslySetInnerHTML={{__html: summary}}/>
+                            <GenresCreator genres={genres}/>
+                            <MovieInformation info={{
+                                language,
+                                status,
+                                type,
+                                officialSite,
+                                network,
+                                rating,
+                                premiered,
+                                externals
+                            }}/>
+                        </div>
+                        <div className="movie-item__footer">
+                            <Link to={`detail/${id}`}>Detail information</Link>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }

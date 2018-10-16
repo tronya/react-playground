@@ -1,0 +1,35 @@
+body {
+  background: palette(blue);
+  color: palette(light);
+  font-family: $montserrat;
+  font-size: 16px;
+  font-weight: $fontRegular;
+  letter-spacing: .8px;
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $fontLight;
+}
+
+h2 {
+  font-weight: $fontBold;
+  text-shadow: 2px 5px 5px black;
+}
+
+p {
+  font-weight: $fontRegular;
+
+  span {
+    font-weight: $fontLight;
+  }
+
+  b, span, i, pre {
+    color: palette(blue, light)
+  }
+}
+
+a {
+  color: palette(blue, light);
+  text-decoration: none;
+}

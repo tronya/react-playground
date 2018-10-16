@@ -1,0 +1,12 @@
+.genres {
+  display: flex;
+  &__item {
+    padding: .3rem .7rem;
+    background: palette(grey);
+    display: inline-block;
+    border-radius: 10rem;
+    box-sizing: border-box;
+    margin-right: .5rem;
+    color: palette(blue)
+  }
+}

@@ -1,11 +1,6 @@
-button, .btn {
-  padding: .3rem;
-}
+@import "scss/utils/helpers";
+@import "scss/utils/variables";
+@import "scss/utils/general";
+@import "scss/utils/buttons";
 
-button__active, .btn__active {
-  background-color: green;
-}
-
-.bg__grey {
-  background: grey;
-}
+@import "scss/components/components";

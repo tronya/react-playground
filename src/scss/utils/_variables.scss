@@ -1,0 +1,20 @@
+$fontRegular: 400;
+$fontLight: 100;
+$fontBold: 900;
+
+$montserrat: 'Montserrat', sans-serif;
+
+$bgGeneral: #131A20;
+
+$palettes: (
+        light:(
+                base:white
+        ),
+        grey:(
+                base:#eee
+        ),
+        blue:(
+                base: #131A20,
+                light:#2AE4FC,
+        ),
+)
